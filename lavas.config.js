@@ -40,7 +40,8 @@ module.exports = {
          */
         nodeExternalsWhitelist: [
             /iscroll/
-        ]
+        ],
+        jsSourceMap: false
     },
     router: {
         mode: 'history',
