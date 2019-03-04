@@ -1,7 +1,7 @@
 
-        importScripts('/lavas/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/lavas/dist/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/lavas/static/workbox-v3.6.3/'
+            modulePathPrefix: '/lavas/dist/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -48,4 +48,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
-workbox.routing.registerNavigationRoute('/lavas/index.html');
+workbox.routing.registerNavigationRoute('/lavas/dist/index.html');
