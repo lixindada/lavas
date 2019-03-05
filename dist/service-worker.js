@@ -1,9 +1,9 @@
-importScripts("/lavas/dist/precache-manifest.4e1323881450ab2495e5b83b9caad21b.js");
+importScripts("/lavas/precache-manifest.fa33e29e81a59dce0d5edbac84e3f605.js");
 
 
-        importScripts('/lavas/dist/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/lavas/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/lavas/dist/static/workbox-v3.6.3/'
+            modulePathPrefix: '/lavas/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -50,4 +50,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
-workbox.routing.registerNavigationRoute('/lavas/dist/index.html');
+workbox.routing.registerNavigationRoute('/lavas/index.html');
